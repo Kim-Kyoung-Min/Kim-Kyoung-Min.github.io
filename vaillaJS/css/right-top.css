@@ -1,0 +1,55 @@
+#kbs{
+    display: block;
+    float: right;
+    position: relative;
+    left: 285px;
+    top: 115px;
+}
+#naverSport{
+    display: block;
+    float: right;
+    position: relative;
+    left: 417px;
+    top: 113px;
+}
+
+#memo{
+    display: block;
+    float: right;
+    position: relative;
+    left: -455px;
+    top: 855px;
+}
+#scrollup{
+    display: block;
+    float: right;
+    position: relative;
+    left: -416.5px;
+    top: 1005px;
+}
+
+header a{
+    display: block;
+    float: right;
+    padding: 10px 20px;
+    margin: 10px 20px;
+}
+.far{
+    color: white;
+}
+
+#scrollup2{
+    display: block;
+    float: right;
+    position: relative;
+    left: -341.5px;
+    top: 1995px;
+}
+
+#scrolldown2{
+    display: block;
+    float: right;
+    position: relative;
+    left: -380.5px;
+    top: 1835px;
+}
