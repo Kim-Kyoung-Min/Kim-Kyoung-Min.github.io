@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head lang>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/left-top.css">
+    <link rel="stylesheet" href="css/right-top.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+    <script src="js/jquery-1.12.4.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <a href="https://docs.google.com/presentation/" id="p"><i class="far fa-file-powerpoint fa-2x"></i></a>
+            <a href="https://docs.google.com/spreadsheets/" id="e"><i class="far fa-file-excel fa-2x"></i></a>
+            <a href="https://docs.google.com/document/" id="w"><i class="far fa-file-word fa-2x"></i></a>
+            <a href="https://mail.google.com/mail/u" id="w"><i class="far fa-envelope fa-2x"></i></a>
+            <div class="themeDropDown">
+                <div onclick="themeMenuClick()"><i class="dropbtn fas fa-th-large fa-2x"></i></div>
+                <ul id="userDropdown" class="dropdown-theme">
+                    <li><button id="bg-default" type="button" class="theme-button"></button></li>
+                    <li><button id="bg-black" type="button" class="theme-button"
+                            style="--theme-primary:black; --theme-secondary:white;"></button></li>
+                    <li><button id="bg-grey" type="button" class="theme-button"
+                            style="--theme-primary:darkgrey; --theme-secondary:white; "></button></li>
+                    <li><button id="bg-navy" type="button" class="theme-button"
+                            style="--theme-primary:rgb(10, 10, 66); --theme-secondary:white; "></li>
+                </ul>
+            </div>
+            <b onclick="$('html, body').stop().animate({ scrollTop : 1850},700)" ; id="kbs"><i class="fas fa-tv"
+                    style="font-size: 25px;"></i></b>
+            <iframe id="kbs2" class="kbs2" style="position:absolute; top:2020px; left: 145px; background-color: white;"
+                width="1600" height="690" scrolling="yes" 
+                src="https://news.naver.com/"></iframe>
+            <b onclick="$('html, body').stop().animate({ scrollTop : 1850},700)" ; id="naverSport">
+                <i class="fas fa-volleyball-ball" style="font-size: 30px;"></i></b>
+
+            <iframe id="naverSport2" class="naverSport2"
+                style="position:absolute; top:2020px; left: 145px; background-color: white;" width="1600" height="690"
+                scrolling="yes" src=" https://sports.news.naver.com/index.nhn"></iframe>
+            <b onclick="$('html, body').stop().animate({ scrollTop : 970},700)" ; id="memo">
+                <i class="fas fa-arrow-circle-down" style="font-size: 40px;"></i></b>
+
+            <iframe id="memoframe" class="memoframe"
+                style="position:absolute; top:950px; left: 0px; background-color: white;" width="100%" height="980px"
+                scrolling="yes" src="../memo/plan.html"></iframe>
+            <b onclick="$('html, body').stop().animate({ scrollTop : 0},700)" ; id="scrollup">
+                <i class="fas fa-arrow-circle-up" style="font-size: 40px;"></i></b>
+
+            <b onclick="$('html, body').stop().animate({ scrollTop : 1850},700)" ; id="scrolldown2">
+                <i class="fas fa-arrow-circle-down" style="font-size: 40px;"></i></b>
+
+            <b onclick="$('html, body').stop().animate({ scrollTop : 970},700)" ; id="scrollup2">
+                <i class="fas fa-arrow-circle-up" style="font-size: 40px;"></i></b>    
+                
+        </header>
+        <div class="js-clock">
+            <h1 id="clock">00:00</h1>
+            <form class="js-form form">
+                <input id="js-form" type="text" placeholder="이름 입력">
+            </form>
+            <h4 class="js-greetings greetings"></h4>
+            <form class="js-toDoForm">
+                    <input id="toDoForm" type="text" placeholder="오늘의 일정">
+                </form>
+                <ul class="js-toDoList">
+                    <ul class="js-toDoListAct"></ul>
+                </ul>
+            <span class="js-weather"></span>
+            <form class="js-search">
+                <div>
+                    <span class="icon"><i class="fas fa-search"></i></span>
+                    <input id="search" type="text" placeholder="Google 검색">
+                </div>
+                <input id="s">
+                <script type="text/javascript">
+                    $(function () {
+                        $('#search').keydown(function (e) {
+                            if (e.keyCode == 13) {
+                                var val = $('#search').val();
+                                window.location = "https://www.google.com/search?q=" + val;
+                            }
+                        });
+                    });
+                </script>
+            </form>
+            <script src="js/clock.js"></script>
+            <script src="js/gretting.js"></script>
+            <script src="js/todo.js"></script>  
+            <script src="js/bg.js"></script>
+            <script src="js/button.js"></script>
+            <script src="js/weather.js"></script>
+            <script src="js/watch.js"></script>
+            <img id="downBtn" onclick="$('html, body').stop().animate({ scrollTop : 1800},700)" src="images/down.png">
+            <img id="middleBtn" onclick="$('html, body').stop().animate({ scrollTop : 970},700)"
+                src="images/middle.png">
+            <img id="upBtn" onclick="$('html, body').stop().animate({ scrollTop : 0},700)" src="images/up.png">
+            <a id="bg_color"></a>
+        </div>
+
+
+</body>
+
+</html>
