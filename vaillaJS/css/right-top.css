@@ -15,17 +15,17 @@
 
 #memo{
     display: block;
-    float: right;
+    
     position: relative;
-    left: -455px;
-    top: 855px;
+   
+    top: 600px;
 }
 #scrollup{
     display: block;
-    float: right;
+
     position: relative;
-    left: -416.5px;
-    top: 1005px;
+
+    top: 700px;
 }
 
 header a{
@@ -40,16 +40,22 @@ header a{
 
 #scrollup2{
     display: block;
-    float: right;
+
     position: relative;
-    left: -341.5px;
-    top: 1995px;
+
+    top: 1640px;
+    color: black;
 }
 
 #scrolldown2{
     display: block;
-    float: right;
+
     position: relative;
-    left: -380.5px;
-    top: 1835px;
+
+    top: 1480px;
+}
+.arrow{
+    text-align: center;
+    height: 0;
+    width: auto;
 }
